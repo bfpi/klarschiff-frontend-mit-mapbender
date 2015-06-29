@@ -1,0 +1,30 @@
+<?php
+	// CONFIG START ------------------------------------------------------------
+	//
+	// POSTGRESQL DATABASE
+	define("HOST","localhost");
+	define("PORT",5432);
+	define("NAME","standortsuche");
+	define("USER","standortsuche");
+	define("PASS","standortsuche");
+	
+	// TABLE AND COLUMNS
+	define("SCHEMA","public");
+	define("TABLE","standortsuche");
+	define("COLUMNS","id,poi_titel,poi_alternativtitel,stadtteil_id,stadtteil_name,strasse_id,strasse_name,keywords,strasse,hausnummer,hausnummerzusatz,stadtteil,postleitzahl,zusatz");	
+	
+	// CSV OPTIONS
+	define("CSV_MAX_COUNT",50);
+	define("SLEEP_TIME",0);
+	
+	// SOLR OPTIONS
+	define("SOLR_PATH","http://localhost:8080/solr/");
+	define("UPDATE_URL",SOLR_PATH."update");
+	
+	define("URL","http://demo.klarschiff-hro.de/frames/login.php?mb_user_myGui=Klarschiff&name=public&password=public");
+	define("RES_POI",'<div class="resultElement">&nbsp;<a href="'.URL.'#BBOX#" name="#BBOXS#" class="gotoBBOX">#NAME# #ZUSATZ#</a><span>POI</span></div>');
+	define("RES_STADTTEIL",'<div class="resultElement">&nbsp;<a href="'.URL.'#BBOX#" name="#BBOXS#" class="gotoBBOX">#NAME# #ZUSATZ#</a><span>Stadtteil</span></div>');
+	define("RES_STRASSE",'<div class="resultElement">&nbsp;<a href="'.URL.'#BBOX#" name="#BBOXS#" class="gotoBBOX">#NAME# #ZUSATZ#</a><span>Straße</span></div>');
+	define("RES_ELSE",'<div class="resultElement">&nbsp;<a href="'.URL.'#BBOX#" name="#BBOXS#" class="gotoBBOX">#NAME# #ZUSATZ#</a><span>Adresse</span></div>');
+	// CONFIG END --------------------------------------------------------------
+?>

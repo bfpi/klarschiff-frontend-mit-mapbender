@@ -1,0 +1,427 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background: #eee;
+  height: 100%;
+  overflow: hidden;
+  font-family: Verdana, Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background: #fff;
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+}
+
+a.directlink {
+  padding-left:5px;
+  font-size:80%;
+}
+
+#header {
+  position: relative;
+}
+
+#header h1 {
+  padding: 0 2px;
+}
+
+#themeroller {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+#content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2px;
+}
+
+
+#ol_map {
+  background-color: #CCCCCC;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#ol_map .olMapViewport {
+  position: absolute!important;
+}
+
+#sidebar {
+
+  border: 0px solid gray;
+
+  float: right;
+  height: auto;
+  position: relative;
+  z-index: 1001;
+  background:url(media/transparent_1x1_70.png);    
+
+}
+
+#sidebar_toggle {
+  width: 10px;
+  height: 100%;
+
+  cursor: pointer;
+  background: url('../pc/media/toggle_sprite.png');
+  background-repeat: no-repeat;
+  border-left: 0px solid #bbb;
+}
+
+.sidebar-open #sidebar_toggle {
+  background-position: 100% 50%!important;
+}
+
+.sidebar-closed #sidebar_toggle {
+  background-position: 0 50%!important;
+}
+
+#sidebar_widgets {
+  padding: 2px 2px 2px 2px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#map_toggle .ui-buttonset {
+  margin-right: 0;
+}
+
+#map_toggle label {
+  width: 50%;
+}
+
+#back_to_start .ui-button {
+  width: 99.4%;
+  margin-top:1px;
+}
+
+#widgets {
+  background: none!important;
+  width:333px;
+}
+
+#standortsuche {
+  position: relative;
+}
+
+#standortsuche .input_wrapper {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin-right: -1px;
+}
+
+#standortsuche #standort {
+  padding: 0.4em 0.1em;
+  width: 100px;
+  border: 1px solid #fff;
+}
+
+#standortsuche button {
+}
+
+#melden ol {
+  list-style: none;
+
+}
+
+#melden ol a {
+  text-decoration: none;
+}
+
+#melden ol a img {
+  vertical-align: middle;
+  margin-right: 0.3em;
+  border: none;
+  height: 43px;
+  width: 36px;
+}
+
+#beobachtungsflaechen button {
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+
+#kartenelemente ol div {
+  height: 24px;
+  line-height: 24px;
+}
+
+#kartenelemente label {
+  margin-left: 0.3em;
+  font-size:90%;
+}
+
+#kartenelemente input {
+  vertical-align: middle;
+}
+
+#kartenelemente img {
+  vertical-align: middle;
+  padding: 0 0 0 5px;
+  float:right;
+  height: 22px;
+  width: 22px;
+}
+
+#kartenelemente #ideen12 {
+  margin-top: 1.0em;
+}
+
+#kartenelemente div {
+  margin-top: 0.5em;
+}
+
+#kartenelemente #generalisiert {
+  margin-top: 1.0em;
+}
+
+#sonderseiten button {
+  margin-bottom: 0.5em;
+  width: 90%;
+}
+
+/** Formular **/
+form#meldung label, #meldung_abuse label , #meldung_lobhinweisekritik label{
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.3em;
+}
+
+form#meldung_support label, #meldung_support label {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.3em;
+}
+
+#meldung_abuse input, #meldung_abuse textarea,
+#meldung_support input, #meldung_support textarea,
+#meldung_lobhinweisekritik input, #meldung_lobhinweisekritik textarea{
+  width: 98%;
+}
+
+#meldung_edit form input, #meldung_edit form textarea {
+  width: 98%;
+  max-width: 98%;
+  min-width: 98%;
+  margin-bottom:15px;
+}
+
+.scrollCheckbox form input {
+  width: 98%;
+  margin-bottom:15px;
+}
+
+form select {
+  width: 99%;
+  max-width: 99%;
+  min-width: 99%;
+  margin-bottom:15px;
+}
+
+div#problem input {
+  width: 5%;
+}
+div#idee input {
+  width: 5%;
+}
+form hr {
+  margin: 1em 0;
+}
+
+form .help {
+  margin-top: 1.5em;
+  font-size: 0.7em;
+  color: #333;
+}
+
+.error {
+  border-color: #FF0000;
+}
+
+#meldung_edit {
+  display: none;
+}
+
+#meldung_show {
+  display: none;
+}
+
+#meldung_show #meldung_details_show {
+  float: right;
+}
+
+#supporters {
+  float: right;
+  width: 30%;
+  display: none;
+  text-align: center;
+}
+
+#supporters .meldung_unterstuetzer {
+  display: block!important;
+  margin: 0 auto;
+}
+
+.teaser #supporters {
+  display: block;
+}
+
+#meldung_show .meldung_unterstuetzer {
+  font-weight: bold;
+  display: inline-block;
+  padding-top:2px;
+  height: 1.4em;
+  width: 2em;
+  text-align: center;
+  background: #50C80F;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
+}
+
+#meldung_show.problem .meldung_unterstuetzer{
+  background: #F5E123;
+}
+
+#meldung_show.idee .meldung_unterstuetzer.unter-schwellenwert {
+  background: #FF3700;
+}
+
+
+#meldung_show label, #meldung_show input {
+  display: block;
+  width: 100%;
+}
+
+#meldung_details_recorder {
+  position: relative;
+  top: -0.5ex;
+}
+
+#meldung_details_icon {
+  margin-right: 0.75em;
+  vertical-align: middle;
+  height: 22px;
+  width: 22px;
+}
+
+.meldung_eintrag {
+  font-style:italic;
+  font-size:115%;
+  padding-bottom:12px;
+}
+
+.meldung_eintrag-nicht-vorhanden {
+  font-size:115%;
+  padding-bottom:12px;
+}
+
+#meldung_actions {
+  width:100%;
+  padding:0;
+  margin-left:-11px;
+}
+
+#meldung_actions button {
+  display: inline-block;
+  margin-right: 0.1em;
+  overflow: visible;
+  padding: 0;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  font-size: 1em;
+  line-height:30px;
+  height:30px;
+  vertical-align:middle;
+}
+
+#rss_abo #problem {
+  width: 50%;
+  float: left;
+}
+
+#rss_abo #idee {
+  width: 50%;
+  float: right;
+}
+
+
+
+.olControlScale {
+  left: 10px;
+}
+
+
+/* template_flaeche_abonnieren */
+
+div.scrollCheckbox {
+  font-size: 0.8em;
+  line-height: 7px;
+  height: 100%;
+}
+
+div.scrollCheckbox input {
+  margin: 0.5em 0;
+  vertical-align: middle;
+}
+div.scrollCheckbox label {
+  vertical-align: middle;
+}
+
+.olControlAttribution {
+  bottom: 0.5em!important;
+}
+
+.olPopup .buttons {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.olPopup .buttons a#details {
+  margin-right:3px;
+}
+
+.olPopup .buttons a#verwerfen {
+  margin-left:3px;
+}
+
+.ui-dialog-buttonset {
+  width: 100%;
+  text-align: center;
+}
+
+.ui-dialog-buttonpane {
+  padding: 0.3em 0.4em 0.5em!important;
+}
+
+.ui-dialog-buttonpane button {
+  width: 48%;
+  margin: 0.5em 0.2em;
+}
+
+.meldung-foto img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top:2px;
+  margin-bottom:15px;
+}

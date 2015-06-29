@@ -1,0 +1,93 @@
+body {
+    margin:0 auto;
+    background-color:#FFFFFF;
+    color:#000000;
+    font-family:'Verdana',sans-serif;
+    text-align:center;
+}
+
+div#main {
+    width:96%;
+    margin:0 auto;
+    margin-top:1%;
+    margin-bottom:1%;
+    font-size:110%;
+}
+
+div#first_headline {
+    color:#D81920;
+    font-weight:bold;
+}
+
+div.headline {
+    margin-top:3%;
+    color:#D81920;
+    font-weight:bold;
+}
+
+div.content {
+    margin-top:1%;
+    font-size:80%;
+}
+
+div.content_columns{
+    width:32%;
+    margin:0 auto;
+    margin-top:1%;
+    font-size:80%;
+}
+
+div.subheadline {
+    color:#006CB7;
+    font-weight:bold;
+}
+
+div.column {
+    width:50%;
+    float:left;
+    margin-bottom:2%;
+}
+
+div#subsidy{
+    clear:both;
+}
+
+div#subsidy_logo {
+    height:150px;
+    width:129px;
+    margin:0 auto;
+    margin-bottom:0.5%;
+    background-image:url(images/logo_eu-fonds.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    cursor:pointer;
+}
+
+div.justified {
+    text-align:justify;
+}
+
+div.justified_margin_top {
+    margin:0 auto;
+    margin-top:0.5%;
+    text-align:justify;
+}
+
+div.annotation {
+    margin-top:0.5%;
+    font-size:60%;
+}
+
+a {
+    color:#006CB7;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#D81920;
+    text-decoration:none;
+}
+
+span.italic {
+    font-style:italic;
+}

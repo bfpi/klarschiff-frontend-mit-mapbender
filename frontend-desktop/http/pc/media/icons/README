@@ -1,0 +1,41 @@
+Namenskonventionen:
+<vorgangsart>_<vorgangsstatus>[_layer|_s].png
+
+vorgangsart = {idee|problem|..}
+_layer      = miniaturisierte Signatur
+              (22 x 22 px) für Seitenleiste
+_s          = "selected", ausgewählte Signatur
+              mit hervorhebungs-Effekt (56 x xx px)
+
+Stand 16.3.2011:
+
+idee_gemeldet_layer.png
+idee_1.png
+idee_gemeldet_s.png
+idee_offen_layer.png
+idee_2.png
+idee_offen_s.png
+idee_inBearbeitung_layer.png
+idee_3.png
+idee_inBearbeitung_s.png
+idee_wirdNichtBearbeitet_layer.png
+idee_4.png
+idee_wirdNichtBearbeitet_s.png
+idee_abgeschlossen_layer.png
+idee_5.png
+idee_abgeschlossen_s.png
+problem_gemeldet_layer.png
+problem_1.png
+problem_gemeldet_s.png
+problem_offen_layer.png
+problem_2.png
+problem_offen_s.png
+problem_inBearbeitung_layer.png
+problem_3.png
+problem_inBearbeitung_s.png
+problem_wirdNichtBearbeitet_layer.png
+problem_4.png
+problem_wirdNichtBearbeitet_s.png
+problem_abgeschlossen_layer.png
+problem_5.png
+problem_abgeschlossen_s.png

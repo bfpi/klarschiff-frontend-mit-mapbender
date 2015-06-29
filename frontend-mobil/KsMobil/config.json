@@ -1,0 +1,63 @@
+{
+    "name": "KsMobil",
+    "displayName" : "Klarschiff – Bürgerbeteiligung",
+    "buildVersion": "0.4",
+    "mode": "debug",
+    "debugLevel": 1,
+    "eliminate": false,
+    "minify": false,
+
+    "application": {
+        "displayName": "Klarschiff – Bürgerbeteiligung",
+        "baseUrl": null,
+        "version": "0.4",
+        "debugMode": true,
+        "useTransitions": true,
+        "enableTouchOverflow": true,
+        "keyPrefix": "#m#",
+        "keySuffix": "_",
+        "timeStampCreated": "created_at",
+        "timeStampUpdated": "updated_at",
+        "m_id": "m_id"
+    },
+
+    "proxies": [{
+        "baseUrl": "http://demo.klarschiff-hro.de/geoserver_ks",
+        "proxyAlias": "geoserver_ks"
+    },{ 
+        "baseUrl": "http://demo.klarschiff-hro.de/frontend",
+        "proxyAlias": "frontend"
+    }],
+
+    "libraries": [{
+        "name": "jquery-tmpl",
+        "refs": ["jquery.tmpl.min.js"]
+    },{
+        "name": "jquery-form",
+        "refs": ["jquery.form.min.js"]
+    },{
+        "name": "proj4js",
+        "refs": ["proj4js-combined.js"]
+    },{
+        "name": "OpenLayers",
+        "refs": ["OpenLayers.js"]
+    },{
+        "name": "impressum",
+        "refs": ["impressum.html"]
+    }],
+
+    "htmlHeader": [
+        "<meta charset=\"utf-8\">",
+        "<meta name=\"apple-mobile-web-app-capable\" content=\"yes\">",
+        "<meta name=\"apple-mobile-web-app-status-bar-style\" content=\"default\">",
+        "<link rel=\"apple-touch-icon-precomposed\" type=\"image/png\" href=\"theme/images/apple-touch-icon-xlarge.png\" sizes=\"144x144\">",
+        "<link rel=\"apple-touch-icon-precomposed\" type=\"image/png\" href=\"theme/images/apple-touch-icon-large.png\" sizes=\"114x114\">",
+        "<link rel=\"apple-touch-icon-precomposed\" type=\"image/png\" href=\"theme/images/apple-touch-icon-medium.png\" sizes=\"72x72\">",
+        "<link rel=\"apple-touch-icon-precomposed\" type=\"image/png\" href=\"theme/images/apple-touch-icon-small.png\">",
+        "<link rel=\"shortcut icon\" href=\"theme/images/apple-touch-icon-small.png\">",
+        "<link rel=\"shortcut icon\" type=\"image/png\" href=\"theme/images/favicon.png\">",
+        "<meta name=\"keywords\" content=\"Portal,Bürgerbeteiligung,Karte,Probleme,Ideen,Verwaltung\" />",
+        "<meta name=\"description\" content=\"Melden Sie via Karte Probleme und Ideen im öffentlichen Raum, die dann von einer kommunalen Verwaltung bearbeitet werden.\" />",
+        "<meta name=\"author\" content=\"Hansestadt Rostock\" />"
+    ]
+}

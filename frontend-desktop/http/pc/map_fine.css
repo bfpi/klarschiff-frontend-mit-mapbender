@@ -1,0 +1,97 @@
+/*
+CSS-Client spezielle Anpassungen	
+ */
+
+#meldung_show
+{
+  /*background: #faff99;*/
+  background: transparent;
+
+}
+
+.ui-accordion .ui-accordion-content{
+  /*background: white !important;*/
+}
+
+#logopc {
+  border:solid #7f7f7f 0px;
+  padding-left: 2px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+
+}
+
+
+#verwaltung_hr {
+
+  border:solid 1px #000000;
+
+}
+
+
+#meldung_support .ui-dialog .ui-dialog-buttonpane button {
+  width:300px !important;
+  border: solid red 5px;	
+}
+
+#meldung_support .ui-dialog .ui-dialog-buttonpane{
+
+  border:solid orange 3px !important;
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+  float: left !important;
+}
+
+
+#sidebar_widgets .ui-state-focus { 
+  border: 1px solid #941616 !important; 
+  background: #d81920 url(jquery/theme/images/ui-bg_inset-hard_50_d81920_1x100.png) 50% 50% repeat-x !important;
+  font-weight: bold !important; 
+  color: #ffffff !important; 
+}
+
+.ui-button-text{
+  font-size:12px !important;
+}
+
+#sidebar_widgets .ui-button-text
+{
+  font-size: 1em !important;
+}
+
+
+#meldung_show #meldung_details_show {
+  float: right !important;
+  margin-right: 15px !important;
+}
+
+
+#meldung_abuse input, #meldung_abuse textarea,
+#meldung_support input, #meldung_support textarea {
+  width: 98%;
+  max-width: 98%;
+  min-width: 98%;
+}
+
+#meldung label, #meldung_abuse label
+{
+  width:300px;
+}
+/*.ui-state-focus {
+background: url("jquery/theme/images/ui-bg_highlight-hard_50_006cb7_1x100.png") repeat-x scroll 50% 50% #006CB7 !important;
+color: white !important;
+}
+ */
+
+#beobachtungsflaechen {
+  width: 269px;
+}
+
+/* Workaround for #413 */
+.olFramedCloudPopupContent h2 {
+  min-width: 12em;
+  font-size:120%;
+  margin-left:5px;
+  margin-bottom:10px;
+}
